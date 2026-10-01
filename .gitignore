@@ -1,0 +1,43 @@
+# Shared defaults live in setup.sh; these generated files are local overrides.
+AGENTS.local.md
+/.codex/
+/.claude/
+/.mcp.json
+/.agentignore
+/CLAUDE.local.md
+
+# Personal memories and independent project repositories.
+/memory/
+/projects/*
+!/projects/.gitkeep
+/external/*
+!/external/.gitkeep
+
+# Local editor and operating-system state.
+/.idea/
+/.vscode/
+.DS_Store
+
+# Credentials and local environment files, including nested projects.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.aws/
+secrets/
+*.pem
+*.key
+
+# Dependency, build, and test caches.
+.venv/
+venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+target/
+
+# Logs.
+/log/
+/logs/
+*.log
